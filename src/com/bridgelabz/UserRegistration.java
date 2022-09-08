@@ -52,7 +52,7 @@ public class UserRegistration {
 		else
 			System.out.println("Invalid Phone No");
 
-		// For Password Rule. 3
+		// For Password Rule 3
 		System.out.println("\nEnter your Password ");
 		String password = scan.nextLine();
 		boolean check_password_case = checkValidation.password_case_3(password);
