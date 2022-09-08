@@ -41,5 +41,15 @@ public class UserRegistration {
 			System.out.println("Valid Email");
 		else
 			System.out.println("Invalid Email");
+
+		// For Phone-no
+		System.out.println("Enter Phone No With Country Code : MUST GIVE THE SPACE BETWEEN COUNTRY CODE AND PHONE NO");
+		String phone_no = scan.nextLine();
+		boolean check_phone_no = checkValidation.phone_no(phone_no);
+
+		if(check_phone_no)
+			System.out.println("Valid Phone No");
+		else
+			System.out.println("Invalid Phone No");
 	}
 }
