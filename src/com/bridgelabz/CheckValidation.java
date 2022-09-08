@@ -32,7 +32,7 @@ public class CheckValidation {
 		return check;
 	}
 
-	// Method For Password Contain Minimum Eight Character
+	// Method For Password Contain Minimum Eight Character With 1UpperCase
 	public boolean password_case_2(String password) {
 		String match = "(?=.*?[A-Z])+^.{8,}";
 		boolean check = Pattern.matches(match,password);
