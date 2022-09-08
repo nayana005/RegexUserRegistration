@@ -27,8 +27,15 @@ public class CheckValidation {
 
 	// Method For Phone No.
 	public boolean phone_no(String phoneNo) {
-		String match = "[0-9 ]{3}+[6789]{1}+[0-9]{9}+$";
+		String match = "[0-9\s]{3}+[6789]{1}+[0-9]{9}+$";
 		boolean check = Pattern.matches(match,phoneNo);
 		return check;
 	}
-}
+
+	// Method For Password Contain Minimum Eight Character
+	public boolean password_case_1(String password) {
+		String match = "^.{8,}+$";
+		boolean check = Pattern.matches(match,password);
+		return check;
+	}
+}	
