@@ -24,4 +24,11 @@ public class CheckValidation {
 		boolean check = Pattern.matches(match,email);
 		return check;
 	}
+
+	// Method For Phone No.
+	public boolean phone_no(String phoneNo) {
+		String match = "[0-9 ]{3}+[6789]{1}+[0-9]{9}+$";
+		boolean check = Pattern.matches(match,phoneNo);
+		return check;
+	}
 }
