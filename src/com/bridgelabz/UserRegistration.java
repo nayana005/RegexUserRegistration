@@ -6,25 +6,25 @@ public class UserRegistration {
 
 	public static void main(String[] args) {
 
-		String[] allEmail = {"abc@yahoo.com", "abc-100@yahoo.com", "abc.100@yahoo.com", "abc111@abc.com",
-				"abc-100@abc.net", "abc.100@abc.com.au", "abc@1.com", "abc@gmail.com.com",
-				"abc+100@gmail.com", "abc", "abc@.com.my", "abc123@gmail.a", "abc123@.com",
-				"abc123@.com.com", ".abc@abc.com", "abc()*@gmail.com", "abc@%*.com",
-				"abc..2002@gmail.com", "abc..2002@gmail.com", "abc@abc@gmail.com",
-				"abc@gmail.com.1a", "abc@gmail.com.aa.au"};
+	String[] allEmail = {"abc@yahoo.com", "abc-100@yahoo.com", "abc.100@yahoo.com", "abc111@abc.com",
+			     "abc-100@abc.net", "abc.100@abc.com.au", "abc@1.com", "abc@gmail.com.com",
+			     "abc+100@gmail.com", "abc", "abc@.com.my", "abc123@gmail.a", "abc123@.com",
+		             "abc123@.com.com", ".abc@abc.com", "abc()*@gmail.com", "abc@%*.com",
+			      "abc..2002@gmail.com", "abc..2002@gmail.com", "abc@abc@gmail.com",
+			      "abc@gmail.com.1a", "abc@gmail.com.aa.au"};
 
-		System.out.println("Welcome To User-Registration Program !");
-		Scanner scan = new Scanner(System.in);
+	System.out.println("Welcome To User-Registration Program !");
+	Scanner scan = new Scanner(System.in);
 
-		// Object
-		CheckValidation checkValidation = new CheckValidation();
+	// Object
+	CheckValidation checkValidation = new CheckValidation();
 
-		// For First Name
-		System.out.println("\nEnter First Name : ");
-		String fName = scan.nextLine();
-		boolean checkFirstName = checkValidation.firstName(fName);
+	// For First Name
+	System.out.println("\nEnter First Name : ");
+	String fName = scan.nextLine();
+	boolean checkFirstName = checkValidation.firstName(fName);
 
-		if(checkFirstName)
+	if(checkFirstName)
             System.out.println("Valid First Name");
         else
             System.out.println("Invalid First Name");
